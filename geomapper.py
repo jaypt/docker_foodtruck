@@ -27,9 +27,10 @@ def mapper(data, writeToFile='mapped.geojson'):
                                             info.get("latitude", "")
                                              )
                             }
-        if line['geometry']['coordinates'][0] == "" or\
-           line['geometry']['coordinates'][1] == "":
-             print line['properties']['name']
+        #0 co-ordinates put off the map
+        if line['geometry']['coordinates'][0] == "0" or\
+           line['geometry']['coordinates'][1] == "0" :
+             continue
         info_list.append(line)
         
     for line in info_list:
