@@ -1,0 +1,17 @@
+<!doctype html>
+<title>SF food truck info</title>
+
+
+
+<div class=page>
+ {% for msg in msg_all %}
+    <h1> {{msg}} </h1>
+ {% endfor %}
+ <li><a href="{{eg_all}}">{{eg_all}}</a></li>
+
+ {% for msg in msg_query %}
+    <h1> {{msg}} </h1>
+ {% endfor %}
+ <li><a href="{{eg_food}}">{{eg_food}}</a></li>
+ 
+</div>
