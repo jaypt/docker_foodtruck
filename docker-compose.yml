@@ -6,6 +6,6 @@ services:
     image: jaypt/start_flask
     command: python2.7 start_flask.py
     ports:
-      - "127.0.0.1:5001:5001"
+      - "5001:5001"
     volumes:
       - .:/code
