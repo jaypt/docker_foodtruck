@@ -16,10 +16,10 @@ app = Flask(__name__)
 def index():
     msg_all = '''to see map of all food trucks:type 
     <url>/search'''
-    eg_all = 'http://localhost:5000/search?food=all'
+    eg_all = 'http://localhost:5001/search?food=all'
     msg_query = '''to query specific food: type
     <url>/search?food=<query>'''
-    eg_food = 'http://localhost:5000/search?food=chicken' 
+    eg_food = 'http://localhost:5001/search?food=chicken' 
     return render_template('index.html', 
                            msg_all=msg_all.split('\n'), 
                            eg_all=eg_all,
